@@ -14,5 +14,7 @@ import java.util.List;
 @Data
 public class PageResult<T> implements Serializable {
     private Integer total;
+    private Integer pageSize;
+    private Integer pageNumber;
     private List<T> rows;
 }

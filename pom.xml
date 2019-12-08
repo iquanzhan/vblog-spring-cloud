@@ -10,6 +10,7 @@
     <modules>
         <module>vblog-common</module>
         <module>vblog-api</module>
+        <module>vblog-user</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -34,38 +35,67 @@
         <beanUtils.version>1.9.3</beanUtils.version>
         <lombok.version>1.18.4</lombok.version>
         <fastjson.version>1.2.46</fastjson.version>
+        <druid.version>1.1.21</druid.version>
+        <codec.version>1.13</codec.version>
     </properties>
 
     <dependencies>
+        <!--spring web starter-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!--spring test starter-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--common-lang3-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
         </dependency>
+
+        <!--beanutils-->
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
             <version>${beanUtils.version}</version>
         </dependency>
+
+        <!--lopmbok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+
+        <!--fastjson-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
+
+        <!--加密解密摘要算法-->
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>${codec.version}</version>
+        </dependency>
+
+        <!--druid 连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <repositories>
