@@ -35,7 +35,6 @@
         <beanUtils.version>1.9.3</beanUtils.version>
         <lombok.version>1.18.4</lombok.version>
         <fastjson.version>1.2.46</fastjson.version>
-        <druid.version>1.1.21</druid.version>
         <codec.version>1.13</codec.version>
     </properties>
 
@@ -88,13 +87,11 @@
             <version>${codec.version}</version>
         </dependency>
 
-        <!--druid 连接池-->
+        <!--JSR303校验-->
         <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid</artifactId>
-            <version>${druid.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
-
 
     </dependencies>
 
