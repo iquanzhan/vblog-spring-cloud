@@ -1,4 +1,4 @@
-package com.chengxiaoxiao.api;
+package com.chengxiaoxiao.api.controller;
 
 
 import com.chengxiaoxiao.common.entity.Result;
